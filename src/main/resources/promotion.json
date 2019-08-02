@@ -1,0 +1,53 @@
+[
+  {
+    "name": "prmotionsSetA",
+    "promotionList": [
+      {
+        "discount": 7,
+        "discountType": "PERCENTAGE",
+        "origin": ["Africa"]
+      },
+      {
+        "discount": 4,
+        "discountType": "PERCENTAGE",
+        "rating": {"operation":"equal","value":2}
+      },
+      {
+        "discount": 8,
+        "discountType": "PERCENTAGE",
+        "rating": {"operation":"lesser","value":2}
+      },
+      {
+        "discount": 100,
+        "discountType": "FLAT",
+        "price": {"operation":"greater","value":500},
+        "category": ["electronics","furnishing"]
+      }
+    ]
+  },
+  {
+    "name": "prmotionsSetB",
+    "promotionList": [
+      {
+        "discount": 12,
+        "discountType": "PERCENTAGE",
+        "inventory": {"operation":"greater","value":20}
+      },
+      {
+        "discount": 7,
+        "discountType": "PERCENTAGE",
+        "arrival": ["NEW"]
+      }
+    ]
+  },
+  {
+  	"name":"default",
+  	"promotionList":[
+  		{
+  		"discount": 2,
+        "discountType": "PERCENTAGE",
+        "price": {"operation":"greater","value":1000}
+  		}
+  	] 
+  }
+]
